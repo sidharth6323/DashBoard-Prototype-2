@@ -48,10 +48,20 @@ div#nav-btns{
 	height: 100%
 }
 
+#canvas{
+	margin-top: 5em;
+	margin-bottom: 2em;
+	display: block;
+	width: 80vw;
+	margin-left: 10VW;
+	margin-right: 10vw;
+}
+
 #article-container{
 
 	margin-top: 10vh;
-	display: flex;
+	display: relative;
+	z-index: 1;
 	flex-direction: column;
 }
 
@@ -90,21 +100,77 @@ article-body{
     top: 0;
 	background-color: #263238;
 	color: white;
-	display: block;
+	z-index: 1;
+	display: relative;
 }
 
 .hide{
 	display: hidden !important;
 }
 
+.softwareCard-container{
+	max-width: 15em;
+	border: 1px solid #263238;
+	border-radius: 4px;
+	vertical-align: middle;
+	margin: 1em .6em !important;
+}
+
+.card-image{
+	min-width: 15em;
+}
+
+.card-image img{
+	height: auto;
+	margin-top: 1em;
+	margin-right: 3em;
+	margin-left: 3em;
+	margin-bottom: .5em;
+	align-items: center;
+	width: 9em;
+}
+
+.card-text{
+	width: auto;
+	height: 100%;
+	background: black;
+	color: white;
+	z-index: 0;
+	padding:1em;
+	padding-top: 1em;
+}
+
+.card-heading{
+	width: auto;
+	font-size: 150%;
+	z-index: 1;
+	padding:.3em;
+	line-height: 1em;
+	border-bottom: 1px solid #f2f2f2;
+}
+
+card-link{
+	font-size: 100%;
+	z-index: 1;
+	padding: .3em;
+	line-height: 10px;
+	color: #f5f5f5;
+	-webkit-transition: background-color .3s;
+	-webkit-transition: color .3s;
+
+}
+
+card-link:hover{
+	background-color: #b0bec5;
+	color: black;
+	cursor: pointer;
+}
+
 footer{
 	color: white;
 	background: black;
 	padding: .2em 1em;
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	width: 100vw;
+	width: 80%;
 	text-align: right;
 }
 
