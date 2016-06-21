@@ -16,12 +16,14 @@ html, body{
 
 nav{
 	background: black;
+	min-width: 100vw;
 }
 
 nav a{
 	color: #FFF;
 	text-decoration: none;
 	font-size: 1.4em;
+	cursor: pointer;
 }
 
 #nav-btns a{
@@ -37,6 +39,7 @@ nav a{
 div#nav-btns{
 	padding: .5em  3em;
 	height: 100%;
+	background: black;
 }
 
 #nav-btns a{
@@ -46,12 +49,18 @@ div#nav-btns{
 }
 
 #article-container{
+
 	margin-top: 10vh;
 	display: flex;
 	flex-direction: column;
 }
 
+.one-half .column{
+	min-width: 437px;
+}
+
 article-heading{
+	min-width: 350px;
 	font-size: 2em;
 	display: block;
 	padding: .1em .6em;
@@ -70,7 +79,8 @@ article-heading:hover{
 
 article-body{
 	margin-top: 10vh;
-	height: 80%;
+	height: auto;
+	min-width: 350px;
 	background-color: #263238;
 	padding: .5em 1em;
 	border: 1px solid #263238;
@@ -80,8 +90,46 @@ article-body{
     top: 0;
 	background-color: #263238;
 	color: white;
+	display: block;
 }
 
 .hide{
 	display: hidden !important;
+}
+
+footer{
+	color: white;
+	background: black;
+	padding: .2em 1em;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100vw;
+	text-align: right;
+}
+
+@media screen and (min-width:300px){
+
+	html, body{
+		min-height: 100vh;
+		min-width: 100vw;
+	}
+
+	nav{
+		width: 100vw;
+	}
+ 
+	#article-container{
+	display: relative;
+	min-width: 350px;
+	z-index: 1;
+	}
+
+	article-body{
+	display: relative;
+	min-width: 350px;
+	z-index: 1;
+	}
+
+
 }
