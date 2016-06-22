@@ -4,6 +4,8 @@ $(document).ready(function(){
 
     clickNewsFeed();
 
+    $( "#article-body" ).hide();
+
   });
 
 function clickNewsFeed(){

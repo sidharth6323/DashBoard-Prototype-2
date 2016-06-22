@@ -3,15 +3,18 @@ html, body{
 }
 
 #logo{
+	height: 100%;
 	padding: .5em 1em ;
 	background: #263238;
 	-webkit-transition: background-color .3s;
-	height: inherit !important;
 
 }
 
 #logo:hover{
 	background-color: #455a64  ;
+}
+
+#logo a:hover{
 	color: #FFF;
 }
 
@@ -27,13 +30,13 @@ nav a{
 }
 
 #nav-btns a{
-	color: #FFF;	
+	color: #b0bec5;	
 	-webkit-transition: color .3s;
 
 }
 
 #nav-btns a:hover{
-	color: #b0bec5 !important;	
+	color: #fff !important;	
 }
 
 div#nav-btns{
@@ -48,6 +51,15 @@ div#nav-btns{
 	height: 100%
 }
 
+div.row{
+	margin: 0px;
+	padding: 0px;
+	min-width: 100vw;
+	position: absolute;
+	left: 5vw;
+	right: 5vw;
+}
+
 #canvas{
 	margin-top: 5em;
 	margin-bottom: 2em;
@@ -60,15 +72,12 @@ div#nav-btns{
 
 #article-container{
 	position: relative;
+	max-width: 45vw;
 	flex-direction: column;
 }
 
-.one-half .column{
-	min-width: 437px;
-}
 
-article-heading{
-	min-width: 350px;
+.article-heading{
 	font-size: 240%;
 	display: block;
 	padding: .1em .6em;
@@ -79,15 +88,15 @@ article-heading{
 	-webkit-transition: background-color .4s;
 }
 
-article-heading:hover{
+.article-heading:hover{
 	color: #FFF;
 	background-color: #263238;
 	border-color: #263238;
 }
 
 #article-body{
+	max-width: 40vw;
 	height: auto;
-	min-width: 350px;
 	background-color: #263238;
 	padding: .5em 1em;
 	border: 1px solid #263238;
@@ -96,7 +105,7 @@ article-heading:hover{
 	color: white;
 	z-index: 1;
 	display: relative;
-	font-size: 170%;
+	font-size: 120%;
 }
 
 .hide{
@@ -139,7 +148,7 @@ article-heading:hover{
 	width: auto;
 	font-size: 150%;
 	z-index: 1;
-	padding:.3em;
+	padding-left:.3em;
 	line-height: 1em;
 	border-bottom: 1px solid #f2f2f2;
 }
@@ -182,18 +191,36 @@ footer{
 	nav{
 		width: 100vw;
 	}
+
+	nav a{
+	color: #FFF;
+	text-decoration: none;
+	font-size: 160%;
+	cursor: pointer;
+}
  
 	#article-container{
 	display: relative;
-	min-width: 350px;
 	z-index: 1;
+	margin-bottom: 1.4em;
 	}
 
 	#article-body{
 	display: relative;
-	min-width: 350px;
 	z-index: 1;
+	margin-bottom: 1.4em;
+	width: 80vw;
+	margin-left: 0px;
+	margin-right: 0px;
 	}
+
+	.article-heading{
+	display: relative;
+	width: 80vw;
+	margin: 3px 0px;
+	}
+
+
 
 
 }
