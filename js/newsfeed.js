@@ -1,4 +1,6 @@
 $(document).ready(function(){
 
-	 $( "#article-container" ).accordion();
+	 $( "#article-container" ).accordion({
+	 	event: "mouseover"
+	 });
   });

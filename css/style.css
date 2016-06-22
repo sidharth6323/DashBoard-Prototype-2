@@ -62,27 +62,30 @@ div.row{
 
 #canvas{
 	display: block;
-	width: 80vw;
+	width: 100%;
 	min-height: 80vh;
-	padding-top: 1em;
+	height: auto;
+	padding-top: 3em;
 }
 
 #article-container{
 	position: relative;
-	width: auto;
+	width: 90%;
 	flex-direction: column;
+	margin-left: 3%;
+	margin-right: 3%;
 }
 
-
 .article-heading{
+	margin-top: 3px;
+	margin-bottom: 0px;
 	font-size: 240%;
 	display: block;
 	padding: .1em .6em;
 	border: 1px solid #263238;
-	border-radius: 5px;
-	margin-bottom: 3px;
 	-webkit-transition: color .4s;
 	-webkit-transition: background-color .4s;
+	-webkit-transition: border-radius .4s;
 	cursor: pointer;
 }
 
@@ -90,10 +93,11 @@ div.row{
 	color: #FFF;
 	background-color: #263238;
 	border-color: #263238;
+
 }
 
 .blue-back{
-	width: 100%;
+	width: auto;
 	height: auto;
 	display:block;
 	overflow:auto;
@@ -103,7 +107,7 @@ div.row{
 	border-color: #263238;
 	padding: .6em 1em;
 	border: 1px solid #263238;
-	border-radius: 5px;
+	border-radius: 0px 0px 5px 5px ;
 	margin-bottom: 3px;
 	-webkit-transition: color .4s;
 	-webkit-transition: background-color .4s;
@@ -201,7 +205,9 @@ footer{
 
 #footer-content{
 	margin: .2em 2em;
+	padding: .5em;
 	font-size: 140%;
+	margin-bottom: 0px !important;
 }
 
 @media screen and (max-width:750px){
