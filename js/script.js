@@ -2,9 +2,36 @@
 
 $(document).ready(function(){
 
-    clickNewsFeed();
+	clickLandingPage();
 
   });
+
+function clickLandingPage(){
+
+		//if(currentModule!="newsfeeds"){
+
+			if(currentModule==""){
+				$( "#canvas" ).load( "modules/landing-page.html" )
+				$( "#canvas" ).addClass("animated fadeInLeft");
+
+			}else{
+
+			$( "#canvas" ).removeClass("animated fadeInLeft").addClass( "fadeOutDown" );
+
+
+		setTimeout(function(){		  
+			$( "#canvas" ).load( "modules/landing-page.html" );
+
+			$( "#article-container" ).removeClass(" fadeOutDown hide").addClass("fadeInLeft");
+			$( "#article-material" ).removeClass(" fadeOutDown hide").addClass("fadeInLeft");
+
+			currentModule = "landing-page";
+			console.log("clickNewsFeed  " + currentModule);
+			
+		}, 500);	
+    	}
+    	};
+
 
 function clickNewsFeed(){
 
