@@ -61,18 +61,15 @@ div.row{
 }
 
 #canvas{
-	margin-top: 5em;
-	margin-bottom: 2em;
 	display: block;
 	width: 80vw;
-	margin-left: 10VW;
-	margin-right: 10vw;
 	min-height: 80vh;
+	padding-top: 1em;
 }
 
 #article-container{
 	position: relative;
-	max-width: 45vw;
+	width: auto;
 	flex-direction: column;
 }
 
@@ -86,6 +83,7 @@ div.row{
 	margin-bottom: 3px;
 	-webkit-transition: color .4s;
 	-webkit-transition: background-color .4s;
+	cursor: pointer;
 }
 
 .article-heading:hover{
@@ -95,12 +93,15 @@ div.row{
 }
 
 .blue-back{
+	width: 100%;
+	height: auto;
+	display:block;
+	overflow:auto;
 	color: #FFF;
-	font-size: 200%;
+	font-size: 150%;
 	background-color: #263238;
 	border-color: #263238;
-	display: block;
-	padding: .1em .6em;
+	padding: .6em 1em;
 	border: 1px solid #263238;
 	border-radius: 5px;
 	margin-bottom: 3px;
@@ -195,17 +196,19 @@ footer{
 	background: black;
 	width: 100%;
 	text-align: right;
+	display: block;
 }
 
 #footer-content{
 	margin: .2em 2em;
+	font-size: 140%;
 }
 
 @media screen and (max-width:750px){
 
 	html, body{
-		min-height: 100vh;
-		min-width: 100vw;
+		height: 100vh;
+		width: 100vw;
 	}
 
 	nav{
@@ -238,6 +241,7 @@ footer{
 	display: relative;
 	width: 80vw;
 	margin: 3px 0px;
+	cursor: pointer;
 	}
 
 
