@@ -57,7 +57,7 @@ div#nav-btns{
 	height: 100vh;
 }
 
-.landing  img, .landing  h2, .landing  p, .landing  a{
+.landing  img, .landing  h2, .landing  p, .landing  a, .landing  input, .landing  label, .landing  select{
 	opacity: 0;
 }
 
@@ -76,6 +76,19 @@ div#nav-btns{
 
 .button:hover{
 	color: #FFF;
+}
+
+#form{
+	padding-top: 3em;
+}
+
+#form h2{
+	padding: .5em;
+	background: #f5f5f5;
+}
+
+.button-primary{
+	margin-top: 1.5em;
 }
 
 #canvas{

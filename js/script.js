@@ -27,6 +27,18 @@ $( window ).scroll(function(){
 		$("#four p").addClass("visible").delay(400).addClass("animated fadeInDown");
 		$("#four a").delay(500).addClass("visible").delay(100).addClass("animated fadeIn");
 	}
+
+	if(wScroll >( $( "#form" ).offset().top) - 200) {
+		$("#form h2").addClass("visible").delay(100).addClass("animated fadeInLeft");
+		$("#form label").addClass("visible").delay(200).addClass("animated fadeInUp");
+		$("#form input").addClass("visible").delay(600).addClass("animated fadeInDown");
+		$("#form select").addClass("visible").delay(600).addClass("animated fadeInDown");
+		}
+
+	var formOffset =($( "#form" ).offset().top - 150);
+	$(".button").click(function(){
+		$("html,body").animate({'scrollTop': formOffset }, 100);
+	});
 })
 
 function clickLandingPage(){
