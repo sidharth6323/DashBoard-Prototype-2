@@ -78,6 +78,7 @@ div#nav-btns{
 }
 
 #article-container{
+	padding-top: 8em;
 	position: relative;
 	width: auto;
 	flex-direction: column;
