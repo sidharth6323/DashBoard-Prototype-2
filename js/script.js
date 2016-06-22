@@ -30,9 +30,9 @@ $( window ).scroll(function(){
 
 	if(wScroll >( $( "#form" ).offset().top) - 200) {
 		$("#form h2").addClass("visible").delay(100).addClass("animated fadeInLeft");
-		$("#form label").addClass("visible").delay(200).addClass("animated fadeInUp");
-		$("#form input").addClass("visible").delay(600).addClass("animated fadeInDown");
-		$("#form select").addClass("visible").delay(600).addClass("animated fadeInDown");
+		$("#form label").addClass("visible").delay(200).addClass("animated fadeIn");
+		$("#form input").addClass("visible").delay(600).addClass("animated fadeIn");
+		$("#form select").addClass("visible").delay(600).addClass("animated fadeIn");
 		}
 
 	var formOffset =($( "#form" ).offset().top - 150);
