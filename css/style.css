@@ -20,6 +20,7 @@ html, body{
 
 nav{
 	background: black;
+	display: inline;
 }
 
 nav a{
@@ -80,7 +81,7 @@ div#nav-btns{
 
 #form{
 	padding-top: 15vh;
-	padding-bottom: 3em;
+	height: 85vh;
 }
 
 #form h2{
@@ -252,13 +253,21 @@ footer{
 
 	nav{
 		width: 100vw;
+		display: block;
 	}
 
 	nav a{
+		height: 100%;
 	color: #FFF;
 	text-decoration: none;
 	font-size: 160%;
 	cursor: pointer;
+	display: inline;
+}
+
+#logo{
+	display: inline;
+	height: 100%;
 }
  
 	#article-container{

@@ -28,7 +28,7 @@ $( window ).scroll(function(){
 		$("#four a").delay(500).addClass("visible").delay(100).addClass("animated fadeIn");
 	}
 
-	if(wScroll >( $( "#form" ).offset().top) - 100) {
+	if(wScroll >( $( "#form" ).offset().top) - 600) {
 		$("#form h2").addClass("visible").delay(100).addClass("animated fadeInLeft");
 		$("#form label").addClass("visible").delay(200).addClass("animated fadeIn");
 		$("#form input").addClass("visible").delay(600).addClass("animated fadeIn");
