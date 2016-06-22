@@ -1,9 +1,30 @@
     var currentModule = "";
 
-$(document).ready(function(){
+$( window ).scroll(function(){
+	var wScroll = $(this).scrollTop();
+	console.log(wScroll > $( "#two" ).offset().top);
 
+	if(wScroll >( $( "#two" ).offset().top) - 400) {
+		$("#two img").addClass("visible").delay(100).addClass("animated fadeInLeft");
+		$("#two h2").addClass("visible").delay(100).addClass("animated fadeInDown");
+		$("#two p").addClass("visible").delay(400).addClass("animated fadeInDown");
+		$("#two a").delay(500).addClass("visible").delay(100).addClass("animated fadeIn");
+	}
 
-  });
+	if(wScroll >( $( "#three" ).offset().top) - 400) {
+		$("#three img").addClass("visible").delay(100).addClass("animated fadeInLeft");
+		$("#three h2").addClass("visible").delay(100).addClass("animated fadeInDown");
+		$("#three p").addClass("visible").delay(400).addClass("animated fadeInDown");
+		$("#three a").delay(500).addClass("visible").delay(100).addClass("animated fadeIn");
+	}
+
+	if(wScroll >( $( "#four" ).offset().top) - 400) {
+		$("#four img").addClass("visible").delay(100).addClass("animated fadeInLeft");
+		$("#four h2").addClass("visible").delay(100).addClass("animated fadeInDown");
+		$("#four p").addClass("visible").delay(400).addClass("animated fadeInDown");
+		$("#four a").delay(500).addClass("visible").delay(100).addClass("animated fadeIn");
+	}
+})
 
 function clickLandingPage(){
 

@@ -56,6 +56,14 @@ div#nav-btns{
 	padding-top: 8em;
 	height: 100vh;
 }
+
+.landing  img, .landing  h2, .landing  p, .landing  a{
+	opacity: 0;
+}
+
+.visible{
+	opacity: 1 !important;
+}
 .course-logo{
 	max-width: 200px;
 	height: auto;
