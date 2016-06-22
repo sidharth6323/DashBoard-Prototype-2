@@ -6,6 +6,7 @@ html, body{
 	padding: .5em 1em ;
 	background: #263238;
 	-webkit-transition: background-color .3s;
+	height: inherit !important;
 
 }
 
@@ -16,13 +17,12 @@ html, body{
 
 nav{
 	background: black;
-	min-width: 100vw;
 }
 
 nav a{
 	color: #FFF;
 	text-decoration: none;
-	font-size: 1.4em;
+	font-size: 240%;
 	cursor: pointer;
 }
 
@@ -55,13 +55,11 @@ div#nav-btns{
 	width: 80vw;
 	margin-left: 10VW;
 	margin-right: 10vw;
+	min-height: 80vh;
 }
 
 #article-container{
-
-	margin-top: 10vh;
-	display: relative;
-	z-index: 1;
+	position: relative;
 	flex-direction: column;
 }
 
@@ -71,7 +69,7 @@ div#nav-btns{
 
 article-heading{
 	min-width: 350px;
-	font-size: 2em;
+	font-size: 240%;
 	display: block;
 	padding: .1em .6em;
 	border: 1px solid #263238;
@@ -87,21 +85,18 @@ article-heading:hover{
 	border-color: #263238;
 }
 
-article-body{
-	margin-top: 10vh;
+#article-body{
 	height: auto;
 	min-width: 350px;
 	background-color: #263238;
 	padding: .5em 1em;
 	border: 1px solid #263238;
 	border-radius: 5px;
-	position: absolute;
-    right: 0;
-    top: 0;
 	background-color: #263238;
 	color: white;
 	z-index: 1;
 	display: relative;
+	font-size: 170%;
 }
 
 .hide{
@@ -169,12 +164,15 @@ card-link:hover{
 footer{
 	color: white;
 	background: black;
-	padding: .2em 1em;
-	width: 80%;
+	width: 100%;
 	text-align: right;
 }
 
-@media screen and (min-width:300px){
+#footer-content{
+	margin: .2em 2em;
+}
+
+@media screen and (max-width:750px){
 
 	html, body{
 		min-height: 100vh;
@@ -191,7 +189,7 @@ footer{
 	z-index: 1;
 	}
 
-	article-body{
+	#article-body{
 	display: relative;
 	min-width: 350px;
 	z-index: 1;
