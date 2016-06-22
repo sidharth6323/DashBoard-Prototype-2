@@ -28,16 +28,16 @@ $( window ).scroll(function(){
 		$("#four a").delay(500).addClass("visible").delay(100).addClass("animated fadeIn");
 	}
 
-	if(wScroll >( $( "#form" ).offset().top) - 200) {
+	if(wScroll >( $( "#form" ).offset().top) - 100) {
 		$("#form h2").addClass("visible").delay(100).addClass("animated fadeInLeft");
 		$("#form label").addClass("visible").delay(200).addClass("animated fadeIn");
 		$("#form input").addClass("visible").delay(600).addClass("animated fadeIn");
 		$("#form select").addClass("visible").delay(600).addClass("animated fadeIn");
 		}
 
-	var formOffset =($( "#form" ).offset().top - 150);
+	var formOffset =($( "#form" ).offset().top);
 	$(".button").click(function(){
-		$("html,body").animate({'scrollTop': formOffset }, 100);
+		$("html,body").animate({'scrollTop': formOffset }, 40);
 	});
 })
 
