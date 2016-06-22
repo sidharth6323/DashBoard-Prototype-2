@@ -6,7 +6,6 @@ $( "document").ready(function(){
 
 $( window ).scroll(function(){
 	var wScroll = $(this).scrollTop();
-	console.log(wScroll > $( "#two" ).offset().top);
 
 	if(wScroll >( $( "#two" ).offset().top) - 400) {
 		$("#two img").addClass("visible").delay(100).addClass("animated fadeInLeft");
