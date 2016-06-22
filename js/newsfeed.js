@@ -37,13 +37,16 @@ $( ".article-heading" ).click(function(){
 		
 		if (toggle == "hidden") {
 			
-			$( this ).slideDown().html("<p style = 'padding: .3em; margin: 0em; font-size: 70%;'>" + ipsum + "</p>");
+			$( this ).hide().html("<p style = 'padding: .3em; margin: 0em; font-size: 70%;'>" + ipsum + "</p>").removeClass("article-heading").addClass("blue-back").slideDown();
 			toggle = "shown";
 			console.log(toggle);
 
 		}else if (toggle == "shown"){
 			
-			$( ".article-heading" ).html("Article");
+			$( this ).slideUp(200, function(){
+				$( this ).removeClass("blue-back").addClass("article-heading").html("Article").slideDown();
+			});
+
 			toggle = "hidden";
 			console.log(heading);
 			console.log(toggle);
@@ -51,3 +54,8 @@ $( ".article-heading" ).click(function(){
 		}
 	});
 //}
+
+$( "#nav-btns a" ).click(function(){
+	$( "#nav-btns a" ).css("color", "#b0bec5");
+	$( this ).css("color", "#fff");
+});
