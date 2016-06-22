@@ -1,5 +1,9 @@
     var currentModule = "";
 
+$( "document").ready(function(){
+	$("#canvas").load("modules/landing-page.html")
+});
+
 $( window ).scroll(function(){
 	var wScroll = $(this).scrollTop();
 	console.log(wScroll > $( "#two" ).offset().top);
@@ -32,21 +36,20 @@ function clickLandingPage(){
 
 			if(currentModule==""){
 				$( "#canvas" ).load( "modules/landing-page.html" )
-				$( "#canvas" ).addClass("animated fadeInLeft");
+				$( "#canvas" ).addClass("animated fadeIn");
 
 			}else{
 
-			$( "#canvas" ).removeClass("animated fadeInLeft").addClass( "fadeOutDown" );
+			$( "#canvas" ).removeClass("fadeIn").addClass( "fadeOutDown" );
 
 
 		setTimeout(function(){		  
 			$( "#canvas" ).load( "modules/landing-page.html" );
 
-			$( "#article-container" ).removeClass(" fadeOutDown hide").addClass("fadeInLeft");
-			$( "#article-material" ).removeClass(" fadeOutDown hide").addClass("fadeInLeft");
+			$( "#canvas" ).removeClass(" fadeOutDown hide").addClass("fadeIn");
 
 			currentModule = "landing-page";
-			console.log("clickNewsFeed  " + currentModule);
+			console.log("Module - " + currentModule);
 			
 		}, 500);	
     	}
