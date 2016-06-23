@@ -2,6 +2,22 @@
 
 $( "document").ready(function(){
 	$("#canvas").load("modules/landing-page.html")
+
+  $('a[href*=#]').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+    && location.hostname == this.hostname) {
+      var $target = $(this.hash);
+      $target = $target.length && $target
+      || $('[name=' + this.hash.slice(1) +']');
+      if ($target.length) {
+        var targetOffset = $target.offset().top;
+        $('html,body')
+        .animate({scrollTop: targetOffset}, 1000);
+       return false;
+      }
+    }
+  });
+
 });
 
 $( window ).scroll(function(){
@@ -34,12 +50,12 @@ $( window ).scroll(function(){
 		$("#form input").addClass("visible").delay(600).addClass("animated fadeIn");
 		$("#form select").addClass("visible").delay(600).addClass("animated fadeIn");
 		}
-
+/*
 	var formOffset =($( "#form" ).offset().top);
 	$(".button").click(function(){
 		$("html,body").animate({'scrollTop': formOffset }, 40);
-	});
-})
+	});	*/
+});
 
 function clickLandingPage(){
 
