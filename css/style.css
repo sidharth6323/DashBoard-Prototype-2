@@ -6,6 +6,7 @@ html, body{
 	height: 100%;
 	padding: .5em 1em ;
 	background: #263238;
+	font-size: 120%;	
 	-webkit-transition: background-color .3s;
 
 }
@@ -26,7 +27,7 @@ nav{
 nav a{
 	color: #FFF;
 	text-decoration: none;
-	font-size: 200%;
+	font-size: 150%;
 	cursor: pointer;
 }
 
