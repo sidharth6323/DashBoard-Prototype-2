@@ -5,25 +5,25 @@ $( "document").ready(function(){
 
 	$(".btn2form").click(function() {
         $('html, body').animate({
-            scrollTop: $("#form").offset().top
+            scrollTop: $("#form").offset().top + 100
         }, 1000);
     });
 
 	$("#btn2front").click(function() {
         $('html, body').animate({
-            scrollTop: $("#two").offset().top
+            scrollTop: $("#two").offset().top + 100
         }, 1000);
     });
 
 $("#btn2droid").click(function() {
         $('html, body').animate({
-            scrollTop: $("#three").offset().top
+            scrollTop: $("#three").offset().top + 100
         }, 2000);
     });
 
 $("#btn2py").click(function() {
         $('html, body').animate({
-            scrollTop: $("#four").offset().top
+            scrollTop: $("#four").offset().top + 100
         }, 2000);
     });
 
