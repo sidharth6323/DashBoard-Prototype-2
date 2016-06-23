@@ -11,10 +11,6 @@ html, body{
 
 }
 
-#logo:hover{
-	background-color: #455a64  ;
-}
-
 #logo a:hover{
 	color: #FFF;
 }
@@ -32,13 +28,11 @@ nav a{
 }
 
 #nav-btns a{
-	color: #fff;	
 	-webkit-transition: color .3s;
 
 }
 
 #nav-btns a:hover{
-	color: #fff !important;	
 }
 
 #nav-btns{
@@ -82,7 +76,7 @@ nav a{
 }
 
 .com-logo{
-	max-width: 400px;
+	max-width: 40vw;
 	height: auto;
 }
 

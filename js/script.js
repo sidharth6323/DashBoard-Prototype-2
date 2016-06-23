@@ -1,4 +1,3 @@
-    var currentModule = "";
 
 $( "document").ready(function(){
 	$("#canvas").load("modules/landing-page.html");
@@ -32,33 +31,33 @@ $("#btn2py").click(function() {
 $( window ).scroll(function(){
 	var wScroll = $(this).scrollTop();
 
-	if(wScroll >( $( "#two" ).offset().top) - 250) {
+	if(wScroll > $( "#two" ).offset().top - 250) {
 		$("#two img").addClass("visible").delay(100).addClass("animated fadeInLeft");
 		$("#two h2").addClass("visible").delay(100).addClass("animated fadeInDown");
 		$("#two p").addClass("visible").delay(400).addClass("animated fadeInDown");
 		$("#two a").delay(500).addClass("visible").delay(100).addClass("animated fadeIn");
 	}
 
-	if(wScroll >( $( "#three" ).offset().top) - 250) {
+	if(wScroll > $( "#three" ).offset().top - 250) {
 		$("#three img").addClass("visible").delay(100).addClass("animated fadeInLeft");
 		$("#three h2").addClass("visible").delay(100).addClass("animated fadeInDown");
 		$("#three p").addClass("visible").delay(400).addClass("animated fadeInDown");
 		$("#three a").delay(500).addClass("visible").delay(100).addClass("animated fadeIn");
 	}
 
-	if(wScroll >( $( "#four" ).offset().top) - 250) {
+	if(wScroll > $( "#four" ).offset().top- 250) {
 		$("#four img").addClass("visible").delay(100).addClass("animated fadeInLeft");
 		$("#four h2").addClass("visible").delay(100).addClass("animated fadeInDown");
 		$("#four p").addClass("visible").delay(400).addClass("animated fadeInDown");
 		$("#four a").delay(500).addClass("visible").delay(100).addClass("animated fadeIn");
 	}
 
-	if(wScroll >( $( "#five" ).offset().top) - 250) {
+	if(wScroll > $( "#five" ).offset().top- 250) {
 		$("#five img").addClass("visible").delay(100).addClass("animated fadeInUp");
 		$("#five h2").addClass("visible").delay(100).addClass("animated fadeInDown");
 	}
 
-	if(wScroll >( $( "#form" ).offset().top) - 250) {
+	if(wScroll > $( "#form" ).offset().top- 250) {
 		$("#form h2").addClass("visible").delay(100).addClass("animated fadeInLeft");
 		$("#form label").addClass("visible").delay(200).addClass("animated fadeIn");
 		$("#form input").addClass("visible").delay(600).addClass("animated fadeIn");
@@ -70,6 +69,9 @@ $( window ).scroll(function(){
 		$("html,body").animate({'scrollTop': formOffset }, 40);
 	});	*/
 });
+
+var currentModule = "";
+
 
 function clickLandingPage(){
 
