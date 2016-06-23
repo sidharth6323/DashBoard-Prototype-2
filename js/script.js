@@ -53,6 +53,11 @@ $( window ).scroll(function(){
 		$("#four a").delay(500).addClass("visible").delay(100).addClass("animated fadeIn");
 	}
 
+	if(wScroll >( $( "#five" ).offset().top) - 250) {
+		$("#five img").addClass("visible").delay(100).addClass("animated fadeInUp");
+		$("#five h2").addClass("visible").delay(100).addClass("animated fadeInDown");
+	}
+
 	if(wScroll >( $( "#form" ).offset().top) - 250) {
 		$("#form h2").addClass("visible").delay(100).addClass("animated fadeInLeft");
 		$("#form label").addClass("visible").delay(200).addClass("animated fadeIn");

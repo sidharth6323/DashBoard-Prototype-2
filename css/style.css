@@ -81,6 +81,11 @@ nav a{
 	height: auto;
 }
 
+.com-logo{
+	max-width: 400px;
+	height: auto;
+}
+
 .button{
 	background-color: #FFF;
 	
