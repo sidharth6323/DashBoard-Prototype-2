@@ -46,6 +46,8 @@
   .container {
     width: 85%;
     padding: 0; }
+
+  .com-logo     {    max-width: 60vw;}
 }
 
 /* For devices smaller than 440px that is all mobile devices basically*/
@@ -55,7 +57,7 @@
 
   .container   {    width: 95%; }
 
-  .com-logo     {    max-width: 70vw;}
+  .com-logo     {    max-width: 40vw;}
 
   .column,
   .columns {
