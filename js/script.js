@@ -54,17 +54,15 @@ $( window ).scroll(function(){
 		$("#five h2").addClass("visible").delay(100).addClass("animated fadeInDown");
 	}
 
-	if(wScroll > $( "#six" ).offset().top - 250) {
-		$("#two img").addClass("visible").delay(100).addClass("animated fadeInLeft");
-		$("#two h2, #two p").addClass("visible").delay(100).addClass("animated fadeInDown");
-		$("#two a").addClass("visible").delay(100).addClass("animated fadeIn");
+	if(wScroll > $( "#six" ).offset().top -500) {
+		$("#six #students").slideDown().addClass("visible").addClass("animated fadeInDown");
 	}
 
 	if(wScroll > $( "#form" ).offset().top- 250) {
 		$("#form h2").addClass("visible").delay(100).addClass("animated fadeInLeft");
-		$("#form label").addClass("visible").delay(200).addClass("animated fadeIn");
-		$("#form input").addClass("visible").delay(600).addClass("animated fadeIn");
-		$("#form select").addClass("visible").delay(600).addClass("animated fadeIn");
+		$("#form label").addClass("visible").addClass("animated fadeIn");
+		$("#form input").addClass("visible").addClass("animated fadeIn");
+		$("#form select").addClass("visible").addClass("animated fadeIn");
 		}
 /*
 	var formOffset =($( "#form" ).offset().top);
