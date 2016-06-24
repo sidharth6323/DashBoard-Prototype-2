@@ -76,7 +76,7 @@ nav a{
 }
 
 .com-logo{
-	max-width: 40vw;
+	max-width: 30vw;
 	height: auto;
 	padding-top: 2em;
 }
@@ -90,6 +90,10 @@ nav a{
 	color: #FFF;
 }
 
+.button-primary{
+	margin-top: 1.5em;
+}
+
 #form{
 	padding-top: 15vh;
 	height: 85vh;
@@ -100,144 +104,11 @@ nav a{
 	background: #f5f5f5;
 }
 
-.button-primary{
-	margin-top: 1.5em;
-}
-
 #canvas{
 	display: block;
 	width: 100%;
 	min-height: 80vh;
 	height: auto;
-}
-
-#article-container{
-	padding-top: 8em;
-	position: relative;
-	width: auto;
-	flex-direction: column;
-	margin-left: 3%;
-	margin-right: 3%;
-}
-
-.article-heading{
-	margin-top: 3px;
-	margin-bottom: 0px;
-	font-size: 240%;
-	display: block;
-	padding: .1em .6em;
-	border: 1px solid #263238;
-	border-radius: 5px 5px;
-	-webkit-transition: color .4s;
-	-webkit-transition: background-color .4s;
-	-webkit-transition: border-radius .4s;
-	cursor: pointer;
-}
-
-.article-heading:hover{
-	color: #FFF;
-	background-color: #263238;
-	border-color: #263238;
-
-}
-
-.blue-back{
-	width: auto;
-	height: auto;
-	display:block;
-	overflow:auto;
-	color: #FFF;
-	font-size: 150%;
-	background-color: #263238;
-	border-color: #263238;
-	padding: .6em 1em;
-	border: 1px solid #263238;
-	border-radius: 0px 0px 5px 5px ;
-	margin-bottom: 3px;
-	-webkit-transition: color .4s;
-	-webkit-transition: background-color .4s;
-}
-
-.blue-back:hover{
-	color: #FFF;
-	background-color: #263238;
-	border-color: #263238;
-}
-
-#article-body{
-	max-width: 40vw;
-	height: auto;
-	background-color: #263238;
-	padding: .5em 1em;
-	border: 1px solid #263238;
-	border-radius: 5px;
-	background-color: #263238;
-	color: white;
-	z-index: 1;
-	display: relative;
-	font-size: 120%;
-}
-
-.hide{
-	display: hidden !important;
-}
-
-.softwareCard-container{
-	max-width: 15em;
-	border: 1px solid #263238;
-	border-radius: 4px;
-	vertical-align: middle;
-	margin: 1em .6em !important;
-}
-
-.card-image{
-	min-width: 15em;
-}
-
-.card-image img{
-	height: auto;
-	margin-top: 1em;
-	margin-right: 3em;
-	margin-left: 3em;
-	margin-bottom: .5em;
-	align-items: center;
-	width: 9em;
-}
-
-.card-text{
-	width: auto;
-	height: 100%;
-	background: black;
-	color: white;
-	z-index: 0;
-	padding:1em;
-	padding-top: 1em;
-}
-
-.card-heading{
-	width: auto;
-	font-size: 150%;
-	z-index: 1;
-	padding-left:.3em;
-	line-height: 1em;
-	border-bottom: 1px solid #f2f2f2;
-}
-
-card-link{
-	font-size: 100%;
-	z-index: 1;
-	padding: .3em;
-	line-height: 10px;
-	color: #f5f5f5;
-	-webkit-transition: background-color .3s;
-	-webkit-transition: color .3s;
-
-}
-
-card-link:hover{
-	background-color: #b0bec5;
-	color: black;
-	cursor: pointer;
 }
 
 footer{
