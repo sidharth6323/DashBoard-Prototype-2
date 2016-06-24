@@ -1,6 +1,5 @@
 
 $( "document").ready(function(){
-	$("#canvas").load("modules/landing-page.html");
 
 	$(".btn2form").click(function() {
         $('html, body').animate({
@@ -53,94 +52,11 @@ $( window ).scroll(function(){
 		$("#five img").addClass("visible").delay(100).addClass("animated fadeInUp");
 		$("#five h2").addClass("visible").delay(100).addClass("animated fadeInDown");
 	}
-	
+
 	if(wScroll > $( "#form" ).offset().top- 250) {
 		$("#form h2").addClass("visible").delay(100).addClass("animated fadeInLeft");
 		$("#form label").addClass("visible").addClass("animated fadeIn");
 		$("#form input").addClass("visible").addClass("animated fadeIn");
 		$("#form select").addClass("visible").addClass("animated fadeIn");
 		}
-/*
-	var formOffset =($( "#form" ).offset().top);
-	$(".button").click(function(){
-		$("html,body").animate({'scrollTop': formOffset }, 40);
-	});	*/
 });
-
-var currentModule = "";
-
-
-function clickLandingPage(){
-
-		//if(currentModule!="newsfeeds"){
-
-			if(currentModule==""){
-				$( "#canvas" ).load( "modules/landing-page.html" )
-				$( "#canvas" ).addClass("animated fadeIn");
-
-			}else{
-
-			$( "#canvas" ).removeClass("fadeIn").addClass( "fadeOutDown" );
-
-
-		setTimeout(function(){		  
-			$( "#canvas" ).load( "modules/landing-page.html" );
-
-			$( "#canvas" ).removeClass(" fadeOutDown hide").addClass("fadeIn");
-
-			currentModule = "landing-page";
-			console.log("Module - " + currentModule);
-			
-		}, 500);	
-    	}
-    	};
-
-
-function clickNewsFeed(){
-
-		//if(currentModule!="newsfeeds"){
-
-			if(currentModule==""){
-				$( "#canvas" ).load( "modules/newsfeed.html" )
-				$( "#article-container" ).addClass("animated fadeInLeft");
-				$( "#article-material" ).addClass("animated fadeInLeft");
-
-			}else{
-
-			$( "#article-container" ).removeClass("animated fadeInLeft").addClass( "fadeOutDown" );
-			$( "#article-material" ).removeClass("animated fadeInLeft").addClass( "fadeOutDown" );
-
-
-		setTimeout(function(){		  
-			$( "#canvas" ).load( "modules/newsfeed.html" );
-
-			$( "#article-container" ).removeClass(" fadeOutDown hide").addClass("fadeInLeft");
-			$( "#article-material" ).removeClass(" fadeOutDown hide").addClass("fadeInLeft");
-
-			currentModule = "newsfeed";
-			console.log("clickNewsFeed  " + currentModule);
-			
-		}, 500);	
-    	}
-
-	//	}
-    	
-    };
-
-function clickSoftware(){
-		
-			if(currentModule!="softwares"){
-
-			$( " #canvas " ).removeClass("fadeInLeft").addClass( "fadeOutRight" );
-			
-
-		setTimeout(function(){		  
-			$( "#canvas" ).load( "modules/newsfeed.html" );
-			$( "#canvas" ).removeClass(" fadeOutRight hide").addClass("fadeInLeft");
-
-			currentModule = "softwares";
-			console.log("clickSoftware  " + currentModule);
-		
-		}, 500);	
-    	}
-}
