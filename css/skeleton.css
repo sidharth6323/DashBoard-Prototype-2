@@ -54,8 +54,12 @@
   #logo a      {    font-size: 1.7em;}
 
   .container   {    width: 95%; }
-  .grid-small  {    width: 48%; }
 
+  .com-logo     {    max-width: 70vw;}
+
+  .column,
+  .columns {
+    margin-left: 0px; }
 }
 
 /* For devices larger than 550px */
