@@ -73,6 +73,8 @@
   .columns:first-child {
     margin-left: 0; }
 
+  .com-logo     {    max-width: 30vw;}
+
   .one.column,
   .one.columns                    { width: 4.66666666667%; }
   .two.columns                    { width: 13.3333333333%; }

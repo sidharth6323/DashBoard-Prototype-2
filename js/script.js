@@ -33,28 +33,31 @@ $( window ).scroll(function(){
 
 	if(wScroll > $( "#two" ).offset().top - 250) {
 		$("#two img").addClass("visible").delay(100).addClass("animated fadeInLeft");
-		$("#two h2").addClass("visible").delay(100).addClass("animated fadeInDown");
-		$("#two p").addClass("visible").delay(400).addClass("animated fadeInDown");
-		$("#two a").delay(500).addClass("visible").delay(100).addClass("animated fadeIn");
+		$("#two h2, #two p").addClass("visible").delay(100).addClass("animated fadeInDown");
+		$("#two a").addClass("visible").delay(100).addClass("animated fadeIn");
 	}
 
 	if(wScroll > $( "#three" ).offset().top - 250) {
 		$("#three img").addClass("visible").delay(100).addClass("animated fadeInLeft");
-		$("#three h2").addClass("visible").delay(100).addClass("animated fadeInDown");
-		$("#three p").addClass("visible").delay(400).addClass("animated fadeInDown");
-		$("#three a").delay(500).addClass("visible").delay(100).addClass("animated fadeIn");
+		$("#three h2, #three p").addClass("visible").delay(100).addClass("animated fadeInDown");
+		$("#three a").addClass("visible").delay(100).addClass("animated fadeIn");
 	}
 
 	if(wScroll > $( "#four" ).offset().top- 250) {
 		$("#four img").addClass("visible").delay(100).addClass("animated fadeInLeft");
-		$("#four h2").addClass("visible").delay(100).addClass("animated fadeInDown");
-		$("#four p").addClass("visible").delay(400).addClass("animated fadeInDown");
-		$("#four a").delay(500).addClass("visible").delay(100).addClass("animated fadeIn");
+		$("#four h2, #four p").addClass("visible").delay(100).addClass("animated fadeInDown");
+		$("#four a").addClass("visible").delay(100).addClass("animated fadeIn");
 	}
 
 	if(wScroll > $( "#five" ).offset().top- 250) {
 		$("#five img").addClass("visible").delay(100).addClass("animated fadeInUp");
 		$("#five h2").addClass("visible").delay(100).addClass("animated fadeInDown");
+	}
+
+	if(wScroll > $( "#six" ).offset().top - 250) {
+		$("#two img").addClass("visible").delay(100).addClass("animated fadeInLeft");
+		$("#two h2, #two p").addClass("visible").delay(100).addClass("animated fadeInDown");
+		$("#two a").addClass("visible").delay(100).addClass("animated fadeIn");
 	}
 
 	if(wScroll > $( "#form" ).offset().top- 250) {
@@ -146,7 +149,4 @@ function clickSoftware(){
 		
 		}, 500);	
     	}
-
-		
-
 }
