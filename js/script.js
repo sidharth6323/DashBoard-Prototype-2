@@ -1,6 +1,12 @@
 
 $( "document").ready(function(){
 
+	$("button").click(function() {
+        $('html, body').animate({
+            scrollTop: $("html").offset().top + 100
+        }, 1000);
+    });
+
 	$(".btn2form").click(function() {
         $('html, body').animate({
             scrollTop: $("#form").offset().top + 100
